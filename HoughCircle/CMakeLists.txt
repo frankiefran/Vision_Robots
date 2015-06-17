@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project( HoughCircle )
+find_package( OpenCV )
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+add_executable( HoughCircle HoughCircle )
+target_link_libraries( HoughCircle ${OpenCV_LIBS} )
